@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="top-bar">
+        <img id="logo" src="AFFBA7F8-AF95-48D7-9AB2-74C530FA8F8B.PNG">
+        <h1 id="heading">Courses</h1>
+
+      <div>
+          <nav>
+            <ul>
+                <li class="Categories"><a href="#">Categories</a>
+                    <div id="Categories-content">
+                        <a href="#">Web Development</a><br>
+                        <a href="#">Programming Languages</a><br>
+                        <a href="#">Software Development</a><br>
+                        <a href="#">Design</a>
+                    </div>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      <div class="enroll-button">
+          <button id="enroll-button" onclick="redirect()">Enroll</button>
+      </div>
+     <div class="search-bar">
+         <input type="search" placeholder="Search...." id="search-bar">
+         <img src="pngwing.com.png" alt="search" id="search-icon">
+     </div>
+      <div><a id="contact" href="">Contact</a></div>
+      <div><a id="about" href="">About</a></div>
+    </div>
+<div class="inner-box">
+  <form action="thankyou.html" method="get" id="paymentForm">
+    <h1 id="payment">Payment</h1>
+    <div class="inner-element">
+        <label for="name">Name:</label>
+        <input class="inner-text" type="text" placeholder="Enter Your Full Name..." required>
+    </div>
+    <div class="inner-element">
+        <label for="email">Email:</label>
+        <input class="inner-text" type="email" id="mail" placeholder="Enter Your Mail Address..." required>
+    </div>
+    <div class="inner-element">
+        <label for="number">Phone No.:</label>
+        <input class="inner-text" type="number" placeholder="Enter Your Phone No..." required>
+    </div>
+    <div class="inner-element">
+        <label for="Course">Select Course:</label>
+        <select id="Course" onchange="courseselector()">
+            <option value="Select Course">Select</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Software Development">Software Development</option>
+            <option value="Programming Languages">Programming Languages</option>
+            <option value="Design">Design</option>
+        </select>
+    </div>
+    <div class="inner-element">
+        <label for="Payment">Select Mode Of Payment</label>
+        <select class="payment-option" id="paymentMethod" onchange="addOptions()">
+            <option value="Select Payment Method">Select</option>
+            <option value="UPI">UPI</option>
+            <option value="Debit/Credit-Card">Debit/Credit Card</option>
+        </select>
+    </div>
+    <div id="additionalOptions"></div>
+    <div>
+        <button class="submit" type="submit" onclick="redirectCourse()">Submit</button>
+    </div>
+  </form>
+</div>
+<script src="main.js"></script>
+<script src="payment.js"></script>
+</body>
+</html>

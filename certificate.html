@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Completion Certificate</title>
+<link rel="stylesheet" href="certificate.css">
+</head>
+<body>
+
+<div class="certificate">
+    <div class="certificate-content">
+        <h2>Certificate Generator</h2>
+        <label for="name">Recipient's Name:</label>
+        <input type="text" id="name" placeholder="Enter recipient's name">
+
+        <label for="course">Course Name:</label>
+        <input type="text" id="course" placeholder="Enter course name">
+
+        <button onclick="generateCertificate()">Generate Certificate</button>
+
+        <canvas id="certificateCanvas"></canvas>
+
+        <a id="downloadLink" download="certificate.png" href="#" style="display: none;">Download Certificate</a>
+    </div>
+</div>
+
+<script src="certificate.js"></script>
+
+</body>
+</html>

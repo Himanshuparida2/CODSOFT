@@ -1,0 +1,55 @@
+.inner-element {
+    margin-bottom: 10px;
+}
+.inner-box{
+    position:absolute;
+    height: 75%;
+    width: 50%;
+    background-color: royalblue;
+    margin-top: 15%;
+    margin-left:10cm ;
+    color: white;
+    text-shadow:  -0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+   -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+#paymentForm input,select{
+    border-radius: 15cm;
+    padding-inline-start: 0.3cm;
+}
+.inner-element input{
+    width: 250px;
+}
+#paymentForm{
+    margin-left: 2cm;
+    margin-top: 1cm;
+}
+#paymentForm .submit{
+    align-items: center;
+}
+.submit{
+    border-radius: 15cm;
+    height: 50px;
+    width: 100px;
+    background-color: royalblue;
+    color: black;
+    background-color:white;
+    text-shadow:  -0.5px -0.5px 0 #ffffff,  
+    0.5px -0.5px 0 #ffffff,
+   -0.5px 0.5px 0 #ffffff,
+    0.5px 0.5px 0 #ffffff;
+    margin-left: 35%;
+}
+#payment{
+    font-size: 50px;
+    text-align: center;
+    margin-left: -2cm;
+    margin-bottom: 0.5cm;
+    color: white;
+    text-shadow:  -0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+   -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
