@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;    
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.first{
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2cm;
+}
+.hide{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease;
+    filter: blur(7px);
+}
+.show{
+    opacity: 1;
+    transform: translateY(0%);
+    filter: blur(0);
+}
+.second{
+    color: white;
+    position: absolute;
+    top: 100%;
+    align-items: center;
+    font-family: sans-serif;
+}
+.second div{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    background-color: red;
+    border-radius: 15cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.second a{
+    text-decoration: none;
+    color: white;
+}
+#First{
+    top: 20%;
+    left:10%;
+    
+}
+#Second{
+    top: 20%;
+    left: 40%;
+}
+#Third{
+    top:20%;
+    left: 70%;
+}
+#Fourth{
+    top: 40%;
+    left: 25%;
+}
+#Fifth{
+    top: 40%;
+    left: 55%;
+}
+#more{
+    top: 60%;
+    left: 40%;
+}
+.second div:hover{
+    height: 105px;
+    width: 305px;
+    color: black;
+    font-size: 0.45cm;
+}
+.second div:hover a{
+    color: black;
+}
+#email{
+    color: black;
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 32%;
+    top: 85%;
+}
+#mail{
+    position: absolute;
+    line-height: 33px;
+}
+#email h3{
+    position: absolute;
+    left: 1.9cm;
+    top: 0.2cm;
+    font-family: sans-serif;
+    font-size: 0.5cm;
+    transition: all 0.2s ease;
+}
+#email a{
+    color: black;
+}
+#email:hover a{
+    color: white;
+    font-size: 0.5cm;
+}

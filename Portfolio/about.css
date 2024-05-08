@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+section{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.first{
+    top: 0;
+}
+.second{
+    top: 100%;
+    place-items: start;
+}
+.second p{
+    position: absolute;
+    font-size: 0.5cm;
+    width: 50%;
+    text-align: center;
+    left: 2cm;
+    top: 12.5%;
+}
+.second p:nth-child(1){
+    margin-bottom:0.5cm;
+}
+.second p:nth-child(2){
+    top: 26%;
+}
+.second:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: red;
+    right: 15cm;
+    opacity: 0;
+    transition: height 0.5s ease;
+}
+.second:hover:after{
+    height: 50%;
+    opacity: 1;
+}
+.email{
+    display: flex;
+    position: absolute;
+    background-color: red;
+    width: 13cm;
+    height: 1cm;
+    bottom: 1.5cm;
+    border-radius: 15cm;
+    justify-self:center ;
+}
+.email h3{
+    color: black;
+    position: absolute;
+    left: 1.9cm;
+    top: 0.2cm;
+    font-family: sans-serif;
+    transition: color 0.2s ease;
+}
+.email:hover h3{
+    color: white;
+}
+#about{
+    font-size: 4cm;
+    font-family: sans-serif;
+}
+.hide{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(100%);
+    filter: blur(7px);
+}
+.show{
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+}
+.skill{
+    position: absolute;
+    width: 20%;
+    right: 1cm;
+    font-family: sans-serif;
+}
+.skill h1{
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+}
+.skill ul{
+    list-style: none;
+}
+.skill ul li button{
+    width: 3cm;
+    height: 1.5cm;
+    background-color: red;
+    margin-bottom: 1cm;
+    border-radius: 15cm;
+    text-align: center;
+    color: white;
+    font-size: 0.4cm;
+    transition: width 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
+}
+.skill ul li button:hover{
+    width: 3.2cm;
+    color: black;
+    font-size: 0.45cm;
+}
+.skill:hover h1{
+    color: red;
+}
+@media(max-width: 500px) {
+    section{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #about{
+        align-self: center;
+        text-align: center;
+        font-size: 3cm;
+    }
+    .second p{
+        width: 100%;
+        left: 0.5cm;
+    }
+    .second{
+        display: block;
+    }
+    .skill{
+        align-items: center;
+        justify-items: center ;
+        left: 5cm;
+        top: 15cm;
+    }
+    .second p:nth-child(2){
+        top: 8.5cm;
+    }
+    .email{
+        top: 28cm;
+        width: 10cm;
+        left: 1cm;
+    }
+    .email h3{
+        font-size: 0.4cm;
+        left: 1.5cm;
+    }
+}

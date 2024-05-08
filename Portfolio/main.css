@@ -1,0 +1,332 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+section{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.hide{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(7px);
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter:blur(0);
+}
+.first{
+    min-height: 100vh;
+    font-size: 1cm;
+    font-family: sans-serif;
+}
+.first span{
+   animation: color 2.5s ease;
+}
+@keyframes color{
+    to{
+        color:red;
+    }
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+}
+ul li{
+    font-size: 0.5cm;
+    margin: 0.7cm;
+}
+ul li a{
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+#el1:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    right: 11.5cm;
+    top: 1.6cm;
+    background-color: red;
+    transition: width 0.5s ease;
+}
+#el1:hover:after{
+    width:5%;
+}
+#el2:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    right: 8.75cm;
+    top: 1.6cm;
+    background-color: red;
+    transition: width 0.5s ease;
+}
+#el2:hover:after{
+    width:5%;
+}
+#el3:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    right: 5.83cm;
+    top: 1.6cm;
+    background-color: red;
+    transition: width 0.5s ease;
+}
+#el3:hover:after{
+    width:5%;
+}
+#el4:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    right: 2.65cm;
+    top: 1.6cm;
+    background-color: red;
+    transition: width 0.5s ease;
+}
+#el4:hover:after{
+    width:5%;
+}
+ul:hover .active{
+    color: white;
+}
+.active{
+    color:red;
+}
+ul li a:hover{
+    color: red;
+}
+ul li .active:hover{
+    color: red;
+}
+nav{
+    margin-left: 25cm;
+    line-height: 1cm;
+}
+.home h1{
+    text-align: left;
+    margin-left: 10cm;
+    line-height: 15cm;
+}
+.home p{
+    width: 50%;
+    font-size: 0.5cm;
+    margin-top: -6cm;
+    margin-left: 6cm;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.socials img{
+    height: 1cm;
+    width: 1cm;
+    padding: 0.5cm;
+    transform: width 1s ease-in-out;
+    transform: height 1s ease-in-out;
+}
+.socials{
+    line-height: 13.7cm;
+    margin-left: 0.5cm;
+}
+.socials img:hover{
+    width: 1.1cm;
+    height: 1.1cm;
+}
+button{
+    background-color: red;
+    width: 5cm;
+    height: 1cm;
+    text-shadow: 1px 0px black
+                 0px 1px black
+                 -1px 0px black
+                  0px -1px black;
+    font-family: sans-serif;
+    margin-left: 13cm;
+    margin-top: 1cm;
+    transform: width 0.5s ease;
+    transform: height 0.5s ease;
+    transform: margin-left 0.5s ease;
+    transform: margin-top 0.5s ease;
+    transform: font-size 0.5s ease;
+    text-align: center;
+}
+button:hover{
+    width: 5.1cm;
+    height: 1.1cm;
+    margin-left: 12.95cm;
+    margin-top: 0.95cm;
+    font-size: 0.4cm;
+}
+button a{
+    text-decoration: none;
+}
+#image{
+    position: absolute;
+    height: 20cm;
+    width: 18cm;
+    top:2cm;
+}
+.image{
+    position: absolute;
+    right: 15cm;
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(7px);
+}
+.showImage{
+    opacity: 1;
+    filter: blur(0);
+}
+@media (max-width:500px){
+    section{
+        width: 100%;
+    }
+    .first{
+        height: 100%;
+        font-size: 1cm;
+        font-family: sans-serif;
+        left: 0;
+    }
+    .first span{
+       animation: color 2.5s ease;
+    }
+    @keyframes color{
+        to{
+            color:red;
+        }
+    }
+    
+    nav ul{
+        position: absolute;
+        display: flex;
+        list-style: none;
+        list-style-type: none;
+        left: 0;
+    }
+    ul li{
+        font-size: 0.5cm;
+        margin: 0.5cm;
+    }
+    ul li a{
+        transition: color 0.2s ease-in-out;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+    }
+    ul:hover .active{
+        color: white;
+    }
+    .active{
+        color:red;
+    }
+    ul li a:hover{
+        color: red;
+    }
+    ul li .active:hover{
+        color: red;
+    }
+    nav{
+        margin-left: 25cm;
+        line-height: 1cm;
+    }
+    .home h1{
+        position: absolute;
+        text-align: left;
+        line-height: 15cm;
+        left: -9.5cm;
+        top: -5cm;
+    }
+    .home p{
+        position: absolute;
+        top: 9.4cm;
+        width: 40%;
+        left: -5cm;
+        font-size: 0.5cm;
+        margin-top: -6cm;
+        margin-left: 6cm;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .socials img{
+        height: 1cm;
+        width: 1cm;
+        padding: 0.5cm;
+        transform: width 1s ease-in-out;
+        transform: height 1s ease-in-out;
+    }
+    .socials{
+        position: absolute;
+        line-height: 13.7cm;
+        margin-left: 0.5cm;
+        top: 16.25cm;
+        left: 0.5cm;
+    }
+    .socials img:hover{
+        width: 1.1cm;
+        height: 1.1cm;
+        bottom: 1cm;
+    }
+    button{
+        position: absolute;
+        left: -10cm;
+        top: 7cm;
+        background-color: red;
+        width: 5cm;
+        height: 1cm;
+        text-shadow: 1px 0px black
+                     0px 1px black
+                     -1px 0px black
+                      0px -1px black;
+        font-family: sans-serif;
+        margin-left: 13cm;
+        margin-top: 1cm;
+        transform: width 0.5s ease;
+        transform: height 0.5s ease;
+        transform: margin-left 0.5s ease;
+        transform: margin-top 0.5s ease;
+        transform: font-size 0.5s ease;
+        text-align: center;
+    }
+    button:hover{
+        width: 5.1cm;
+        height: 1.1cm;
+        margin-left: 12.95cm;
+        margin-top: 0.95cm;
+        font-size: 0.4cm;
+    }
+    button a{
+        text-decoration: none;
+    }
+    #image{
+        position: absolute;
+        height: 10cm;
+        width: 10cm;
+        top:2cm;
+        left: -10cm;
+    }
+    .image{
+        position: absolute;
+        right: 0cm;
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(7px);
+    }
+    .showImage{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
